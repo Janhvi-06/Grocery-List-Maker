@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: none; */
+}
+
+.app {
+  width: 100vw;
+  height: 100dvh;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+header {
+  width: 100%;
+  height: max-content;
+  padding: 0.1rem;
+  text-align: center;
+  /* background-color: #f4a39b; */
+  background-color: #d5607b;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 100rem;
+}
+
+.title {
+  color: aliceblue;
+  font-weight: 600;
+  font-family: cursive;
+  padding-left: 0.5rem;
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 600;
+    font-family: cursive;
+    padding-left: 0.8rem;
+  }
+}
+
+.menu a {
+  padding-right: 2rem;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .menu a {
+    padding-right: 2rem;
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+  }
+}
+
+/* MAIN CONTENT */
+.main_content {
+  width: 95%;
+  height: 75%;
+  /* border: 1px solid white; */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f06373;
+}
+
+.search_and_add {
+  width: 100%;
+  height: max-content;
+  padding: 0.5rem;
+  /* border: 1px solid rgb(255, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_and_add input {
+  width: 60%;
+  margin-top: 0.5rem;
+  background-color: white;
+  color: #f063748a;
+  padding: 0.2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 20px;
+  outline: none;
+}
+
+button {
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 22px;
+  color: white;
+  background-color: #d5607b;
+  border-radius: 0.6vw;
+  font-weight: 650;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.snapshot {
+  width: 100%;
+  border-spacing: 10px;
+  /* border: 1px solid white; */
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.snapshot::-webkit-scrollbar {
+  width: 0px; /* 👈 make it thin */
+}
+
+table {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+th,
+td {
+  /* border: 0.5px solid rgb(21, 228, 42); */
+  padding: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  border-collapse: separate;
+  margin: 10px;
+  border: 1px solid rgb(205, 125, 139);
+}
+
+th,
+#index_no,
+#qty,
+#checkbox,
+#del,
+#edit {
+  text-align: center;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  #index_no {
+    width: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  #item {
+    width: 55%;
+    /* breaks the description sentence (description doesn't overflow...) */
+    word-break: break-all;
+    /* border: 1px solid yellow; */
+    color: #f063748a;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #qty {
+    width: 25%;
+    word-break: break-all;
+    /* border: 1px solid white; */
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  #qty input {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  #qty select {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  #checkbox {
+    width: 5%;
+    /* border: 1px solid yellow; */
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #edit {
+    width: 5%;
+    /* border: 1px solid white; */
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #del {
+    width: 5%;
+    /* border: 1px solid yellow; */
+    font-size: 0.8rem;
+  }
+}
+
+/* more than 500px width */
+@media (min-width: 500px) and (max-width: 2000px) {
+  #item {
+    width: 75%;
+    /* breaks the description sentence (description doesn't overflow...) */
+    word-break: break-all;
+    /* border: 1px solid yellow; */
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 2000px) {
+  #qty {
+    width: 10%;
+    word-break: break-all;
+    /* border: 1px solid white; */
+    font-size: 1rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 2000px) {
+  #qty input {
+    width: 48%;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 2000px) {
+  #qty select {
+    width: 52%;
+    font-size: 1rem;
+    word-spacing: 0%;
+  }
+}
+@media (max-width: 500px) and (max-width: 2000px) {
+  #checkbox {
+    width: 10%;
+    /* border: 1px solid yellow; */
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 2000px) {
+  #edit {
+    width: 5%;
+    /* border: 1px solid white; */
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 2000px) {
+  #del {
+    width: 5%;
+    /* border: 1px solid yellow; */
+    font-size: 1rem;
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: pink;
+}
