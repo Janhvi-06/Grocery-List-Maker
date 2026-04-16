@@ -6,7 +6,7 @@ This app helps users manage their grocery items efficiently with a clean and int
 ---
 
 ## 🚀 Live Demo
-🔗 https://your-netlify-link.netlify.app  
+🔗 https://groceryListMaking.netlify.app  
 
 ---
 
