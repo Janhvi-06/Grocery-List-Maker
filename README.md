@@ -26,8 +26,7 @@ This app helps users manage their grocery items efficiently with a clean and int
 - **Tailwind CSS** – Styling framework  
 - **JavaScript (ES6+)** – Application logic  
 
----##
-🎯 Future Enhancements
+## 🎯 Future Enhancements
 -  User Authentication (Login/Signup)
 -  Backend integration using Node.js & MongoDB
 -  Categorization of grocery items
