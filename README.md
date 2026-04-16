@@ -50,13 +50,13 @@ npm start
 👉 The app will run on:
 http://localhost:3000
 
+---##
 🎯 Future Enhancements
-🔐 User Authentication (Login/Signup)
-☁️ Backend integration using Node.js & MongoDB
-🛍️ Categorization of grocery items
-📊 Smart suggestions using AI
-🌐 Improved deployment & performance
-
+-  User Authentication (Login/Signup)
+-  Backend integration using Node.js & MongoDB
+-  Categorization of grocery items
+-  Smart suggestions using AI
+-  Improved deployment & performance
 
 
 🤝 Contributing
